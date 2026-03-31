@@ -1,7 +1,6 @@
 {
   "name": "pvtl/pvtl-site-search",
   "description": "A site search plugin for WordPress.",
-  "version": "1.0.1",
   "homepage": "https://github.com/pvtl/pvtl-site-search",
   "license": "MIT",
   "authors": [

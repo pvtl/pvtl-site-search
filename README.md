@@ -40,13 +40,18 @@ Ensure your setup installs packages of type `wordpress-plugin` into `wp-content/
 2. Enter a term and submit.
 3. Review matches and copy URLs from the list at the bottom if needed.
 
+## Releases and versioning
+
+Releases are **Git tags** (e.g. `v1.0.0`). [`composer.json`](composer.json) intentionally has **no** `"version"` field so [Packagist](https://packagist.org) and Composer take the version from the tag. If you add `"version"` back, it must **exactly** match each tag or Packagist may skip tags with a “version mismatch” warning.
+
+Keep the WordPress plugin header `Version:` in `pvtl-site-search.php` in sync with the tag you ship (for wp-admin display).
+
 ## Package metadata
 
-| Item        | Value |
-|------------|--------|
-| Composer   | `pvtl/pvtl-site-search` |
-| Plugin slug| `pvtl-site-search` |
-| Version    | `1.0.0` in the main plugin file; `1.0.1` in `composer.json` — align these before release if you publish to Packagist or GitHub releases. |
+| Item         | Value |
+|-------------|--------|
+| Composer    | `pvtl/pvtl-site-search` |
+| Plugin slug | `pvtl-site-search` |
 
 ## Author
 
